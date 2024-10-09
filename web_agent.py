@@ -1,4 +1,4 @@
-# from googleapiclient import discovery
+
 from langchain.agents.format_scratchpad.tools import format_to_tool_messages
 from langchain.memory import ChatMessageHistory
 from langchain_core import prompts
@@ -28,7 +28,7 @@ def agent_web_search(search_query: str) -> str:
   result = str(retriever.invoke(search_query))
   return result
 
-# print (agent_web_search("CGMH"))
+print (agent_web_search("CGMH"))
 
 # Define prompt template
 prompt = {
